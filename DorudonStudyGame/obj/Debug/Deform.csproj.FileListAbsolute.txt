@@ -1,0 +1,2 @@
+C:\Users\Cengizhan\Documents\GitHub\DorudonStudyGame\obj\Debug\Deform.csproj.AssemblyReference.cache
+C:\Users\Cengizhan\Documents\GitHub\DorudonStudyGame\obj\Debug\Deform.csproj.CoreCompileInputs.cache

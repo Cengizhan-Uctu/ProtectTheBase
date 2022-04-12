@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3F7177ED-4389-E7A6-C8C5-DD751497FACA}</ProjectGuid>
+    <ProjectGuid>{6377EF30-C432-5C87-9614-528A520E9BC7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -68,9 +68,10 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Script\Tower\TowerCollider.cs" />
     <Compile Include="Assets\Script\PlayerShoting.cs" />
+    <Compile Include="Assets\Script\Tower\TowerMove.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Script\test\test.cs" />
-    <Compile Include="Assets\Script\Tower\TowerMove.cs" />
+    <Compile Include="Assets\Script\PlayerCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Material\Simple Toon\Shaders\STOutline.shader" />
@@ -765,27 +766,27 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{C5602BA0-E4C8-3208-73B7-7F202B3FC2A5}</Project>
+      <Project>{B7E5B5A5-CB58-27C5-9701-0959D4589FC6}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Beans.Unity.Editor.csproj">
-      <Project>{02FE53CA-EA4D-D341-73F6-2408E2199928}</Project>
+      <Project>{7962CEE9-DB2C-ED64-D880-63C7EFFB234F}</Project>
       <Name>Beans.Unity.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Beans.Unity.Mathematics.csproj">
-      <Project>{A9670F57-F2D0-FFF4-DAE9-10C1597BAD5F}</Project>
+      <Project>{C37AA62A-1AB4-837A-5A80-E2F4735F5076}</Project>
       <Name>Beans.Unity.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="Beans.Unity.Collections.csproj">
-      <Project>{52B98D59-68D6-AF7D-8D94-D285FF0D990A}</Project>
+      <Project>{478399B3-BF51-7B3E-4E5E-EE4F50649791}</Project>
       <Name>Beans.Unity.Collections</Name>
     </ProjectReference>
     <ProjectReference Include="Deform.csproj">
-      <Project>{F32BB233-0F9F-F454-4892-417010F5AF22}</Project>
+      <Project>{4E020C3A-42BC-9785-6234-A1173A7A3858}</Project>
       <Name>Deform</Name>
     </ProjectReference>
     <ProjectReference Include="DeformEditor.csproj">
-      <Project>{22B9A758-96E4-AE4C-EA3A-8CAFDDD8C1B2}</Project>
+      <Project>{B7B3543C-C773-DC61-0C71-56E888578AB1}</Project>
       <Name>DeformEditor</Name>
     </ProjectReference>
   </ItemGroup>

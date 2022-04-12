@@ -12,7 +12,10 @@ public class PlayerShoting : MonoBehaviour
     [SerializeField] float rotateSpeed;
     [SerializeField] float fireDelay;
     [SerializeField] float bulletSpeed;
+    [SerializeField] float shotRange;
     [SerializeField] int objeckPoolCount;
+    [SerializeField] LayerMask enemtLayer;
+    [SerializeField] PlayerCollision playerCollision;
     private GameObject[] objectPoolBullet;
     public static bool isFire;
     private float fireRare;
@@ -22,7 +25,8 @@ public class PlayerShoting : MonoBehaviour
     private void Start()
     {
         isFire = false;
-        bulletConut = 20;
+        bulletConut = 6;
+        playerCollision.GlassCapsulBullet(bulletConut);
         objectPoolBullet = new GameObject[objeckPoolCount];
         for (int i = 0; i < objectPoolBullet.Length; i++)
         {
@@ -43,17 +47,27 @@ public class PlayerShoting : MonoBehaviour
         }
 
     }
+    private void Update()
+    {
+        oncollision();
+       
+    }
     public void Shoting(bool isTrunEnemy, GameObject enemy)
     {
        
         if (isTrunEnemy && bulletConut > 0)
         {
-            playerAnimation.idleAnimationFalse();
-            playerAnimation.FiringAnimationTrue();
+           
+           
             if (Time.time > fireRare)
             {
+                playerAnimation.FiringAnimationTrue();
                 bulletConut--;
-
+                if (bulletConut<=0)
+                {
+                    return;
+                }
+                playerCollision.GlassCapsulBullet(bulletConut);
                 objectPoolBullet[poolCounter].SetActive(true);
                 objectPoolBullet[poolCounter].transform.position = gunBarrel.position;
                 objectPoolBullet[poolCounter].transform.DOMove(new Vector3(enemy.transform.position.x, enemy.transform.position.y+1, enemy.transform.position.z) , bulletSpeed);
@@ -67,31 +81,31 @@ public class PlayerShoting : MonoBehaviour
                 fireRare = Time.time + fireDelay;
             }
         }
-        if (bulletConut<=0)
-        {
-            playerAnimation.idleAnimationTrue();
-            playerAnimation.FiringAnimationFalse();
-        }
 
     }
-    private void OnTriggerStay(Collider other)
+    void oncollision()
     {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, shotRange);
 
-        if (other.CompareTag("Enemy"))
+        foreach (Collider hitcollider in hitColliders)
         {
-
-            LockRotate(isFire, other.gameObject);
-            Shoting(isFire, other.gameObject);
+            if (hitcollider.gameObject.layer == 8)
+            {
+                LockRotate(isFire, hitcollider.gameObject);
+                Shoting(isFire, hitcollider.gameObject);
+            }
 
         }
-
-
+       
     }
-    private void OnTriggerEnter(Collider other)
+    public void incraseAmnmo() 
     {
-        //if (other.CompareTag("cephane"))// teg mermi oldugu için çıkartma yapmıyordu
-        //{
-        //    bulletConut++;
-        //}
+        bulletConut++;
+        playerCollision.GlassCapsulBullet(bulletConut);
+        if (bulletConut>12)
+        {
+            // top çıkart
+        }
     }
+   
 }

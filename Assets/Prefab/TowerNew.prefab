@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3244025612132622989}
   - component: {fileID: 5867120727396793246}
   - component: {fileID: -6319636399934843879}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TowerNew
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brokenTower: {fileID: 1770830601379488912, guid: eb92ec6fb3e753944a9f00cdb38009cc, type: 3}
   destructionObject: {fileID: 3628803618184831541, guid: 9f5c6437b360af4459d98b537a428ad5, type: 3}
-  power: 20
+  power: 30
   healtText: {fileID: 3244025612745134344}
 --- !u!114 &-6319636399934843879
 MonoBehaviour:
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 3244025612306037203}
   - component: {fileID: 3244025612306037212}
   - component: {fileID: 3244025612306037213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 3244025612745134345}
   - component: {fileID: 3244025612745134351}
   - component: {fileID: 3244025612745134344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 5421248812353324793}
   - component: {fileID: 8976798338680293724}
   - component: {fileID: 6590747363525787030}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyTower
   m_TagString: Enemy
   m_Icon: {fileID: 0}

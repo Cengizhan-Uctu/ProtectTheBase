@@ -7,29 +7,20 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] Animator playerAnim;
 
 
-    public void RunAnimationTure()
-    {
-        playerAnim.SetBool("runig", true);
-    }
-    public void RunAnimationFalse()
-    {
-        playerAnim.SetBool("runig", false);
-    }
-    public void FiringAnimationTrue()
-    {
-        playerAnim.SetBool("fire", true);
-    }
-    public void FiringAnimationFalse()
-    {
-        playerAnim.SetBool("fire", false);
-    }
-
     public void idleAnimationTrue()
     {
-        playerAnim.SetBool("idle", true);
+        playerAnim.SetInteger("state", 0);
     }
-    public void idleAnimationFalse()
+    public void RunAnimationTure()
     {
-        playerAnim.SetBool("idle", false);
+        playerAnim.SetInteger("state", 1);
     }
+  
+    public void FiringAnimationTrue()
+    {
+      
+      playerAnim.Play("firing");
+    }
+   
+   
 }

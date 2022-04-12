@@ -18,21 +18,18 @@ public class Mobilİnput : MonoBehaviour
             if (isTouch.phase == TouchPhase.Began)
             {
                 playerAnimation.RunAnimationTure();
-                playerAnimation.idleAnimationFalse();
-                playerAnimation.FiringAnimationFalse();
+               
                 PlayerShoting.isFire = false;
             }
             if (isTouch.phase == TouchPhase.Moved)
             {
                 playerAnimation.RunAnimationTure();
-                playerAnimation.idleAnimationFalse();
-                playerAnimation.FiringAnimationFalse();
+               
                 PlayerShoting.isFire = false;
             }
             if (isTouch.phase == TouchPhase.Ended)
             {
                 playerAnimation.idleAnimationTrue();
-                playerAnimation.RunAnimationFalse();
                 PlayerShoting.isFire = true;
             }
 

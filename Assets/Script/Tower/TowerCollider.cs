@@ -37,7 +37,7 @@ public class TowerCollider : MonoBehaviour
                 Rigidbody[] Crigdbody = newDestructionObject.GetComponentsInChildren<Rigidbody>();
                 foreach (Rigidbody rb in Crigdbody)
                 {
-                    rb.AddForce(transform.position* power);
+                    rb.AddForce(transform.position * power);
                 }
                 Destroy(newDestructionObject, 1);
                 gameObject.SetActive(false);
@@ -45,4 +45,5 @@ public class TowerCollider : MonoBehaviour
             other.gameObject.SetActive(false);
         }
     }
+    
 }

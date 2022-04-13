@@ -57,21 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\Script\PlayerCollision.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Script\PlayerAnimation.cs" />
     <Compile Include="Assets\Script\Mobilİnput.cs" />
     <Compile Include="Assets\Script\Tower\EnemySpawner.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Script\Cannon\CannonMove.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />
+    <Compile Include="Assets\Script\Cannon\CannonShot.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Script\Tower\TowerCollider.cs" />
     <Compile Include="Assets\Script\PlayerShoting.cs" />
     <Compile Include="Assets\Script\Tower\TowerMove.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-    <Compile Include="Assets\Script\test\test.cs" />
-    <Compile Include="Assets\Script\PlayerCollision.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Material\Simple Toon\Shaders\STOutline.shader" />

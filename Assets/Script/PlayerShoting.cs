@@ -16,6 +16,8 @@ public class PlayerShoting : MonoBehaviour
     [SerializeField] int objeckPoolCount;
     [SerializeField] LayerMask enemtLayer;
     [SerializeField] PlayerCollision playerCollision;
+    [SerializeField] GameObject cannon;
+    [SerializeField] int maxBullet;
     private GameObject[] objectPoolBullet;
     public static bool isFire;
     private float fireRare;
@@ -63,15 +65,11 @@ public class PlayerShoting : MonoBehaviour
             {
                 playerAnimation.FiringAnimationTrue();
                 bulletConut--;
-                if (bulletConut<=0)
-                {
-                    return;
-                }
                 playerCollision.GlassCapsulBullet(bulletConut);
                 objectPoolBullet[poolCounter].SetActive(true);
                 objectPoolBullet[poolCounter].transform.position = gunBarrel.position;
                 objectPoolBullet[poolCounter].transform.DOMove(new Vector3(enemy.transform.position.x, enemy.transform.position.y+1, enemy.transform.position.z) , bulletSpeed);
-                objectPoolBullet[poolCounter].transform.GetChild(0).transform.DOPunchPosition(new Vector3(1, 0, 0), 3, 2, 3);
+                objectPoolBullet[poolCounter].transform.GetChild(0).transform.DOPunchPosition(new Vector3(2, 0, 0), 3, 2, 3);
                 poolCounter++;
                 if (poolCounter == objectPoolBullet.Length)
                 {
@@ -102,9 +100,11 @@ public class PlayerShoting : MonoBehaviour
     {
         bulletConut++;
         playerCollision.GlassCapsulBullet(bulletConut);
-        if (bulletConut>12)
+        if (bulletConut>maxBullet)
         {
-            // top çıkart
+            bulletConut -= 5;
+            cannon.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
    

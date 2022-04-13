@@ -3,7 +3,7 @@
   "Assemblies": [
     {
       "FullName": "Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-04-11T06:42:45.8557239Z"
+      "LastWriteTime": "2022-04-12T11:15:24.8490556Z"
     },
     {
       "FullName": "netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
@@ -19,26 +19,26 @@
     },
     {
       "FullName": "Deform, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-04-11T06:42:48.8037457Z"
+      "LastWriteTime": "2022-04-12T11:15:27.8309405Z"
     },
     {
       "FullName": "mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
       "LastWriteTime": "2021-09-16T18:20:44Z"
     },
     {
-      "FullName": "Beans.Unity.Mathematics, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-04-11T06:42:48.3760102Z"
+      "FullName": "Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2022-04-12T11:15:27.1433188Z"
     },
     {
-      "FullName": "Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-      "LastWriteTime": "2022-04-11T06:42:48.1187772Z"
+      "FullName": "Beans.Unity.Mathematics, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+      "LastWriteTime": "2022-04-12T11:15:27.4165668Z"
     }
   ],
   "Functions": [
     {
       "FullName": "System.Int32 Unity.Burst.Intrinsics.X86::DoGetCSRTrampoline()",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "393eb351a19d025999ac5d1f0c4d1975",
+      "ModuleHash": "ada0061db311a7d0e4279a183014f086",
       "LinkName": "CDCA4A5193BE5947",
       "AssemblyDependencyIndices": [
         0,
@@ -49,7 +49,7 @@
     {
       "FullName": "System.Void Unity.Burst.Intrinsics.X86::DoSetCSRTrampoline(System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "ea6c6d45b98838bb9ea74a9c6663c726",
+      "ModuleHash": "053468ad3a0c5c90cf0a06e18e7eb77a",
       "LinkName": "801E9A000BB37B05",
       "AssemblyDependencyIndices": [
         0,
@@ -58,24 +58,9 @@
       ]
     },
     {
-      "FullName": "System.Void Unity.Jobs.IJobExtensions/JobStruct`1<Deform.RecalculateBoundsJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
-      "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "691a01d01c863e4148edaf6f272d159d",
-      "LinkName": "A8DD24E62E807AD0",
-      "AssemblyDependencyIndices": [
-        3,
-        4,
-        5,
-        1,
-        2,
-        6,
-        7
-      ]
-    },
-    {
       "FullName": "System.Void Unity.Jobs.IJobExtensions/JobStruct`1<Deform.AddTriangleNormalToNormalsJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "ed1b487c70d7928dab864e6ab8de9388",
+      "ModuleHash": "700c103fbfbfb381aa98ef8603d2cd2c",
       "LinkName": "1A5BF2C6BEA70277",
       "AssemblyDependencyIndices": [
         3,
@@ -83,19 +68,34 @@
         5,
         1,
         2,
-        7
+        6
+      ]
+    },
+    {
+      "FullName": "System.Void Unity.Jobs.IJobExtensions/JobStruct`1<Deform.RecalculateBoundsJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
+      "ModuleOptionsHash": 11834165633931345063,
+      "ModuleHash": "24e4f5f21ca50aac5b4698fbf750002e",
+      "LinkName": "A8DD24E62E807AD0",
+      "AssemblyDependencyIndices": [
+        3,
+        4,
+        5,
+        1,
+        2,
+        7,
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CopyFloat3sJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "94357c716f143045ee46e87f474f5aed",
+      "ModuleHash": "bb4eabfa1e39c1e4e92e8086f9a3b719",
       "LinkName": "A126939E3874D468",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -103,7 +103,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.ElasticPointsUpdateJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "bead670f520fef382a8debf49140edb4",
+      "ModuleHash": "2e83b2b8fdfc61d6844766dfd5f47831",
       "LinkName": "1C93BA44E8115C84",
       "AssemblyDependencyIndices": [
         3,
@@ -111,14 +111,14 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.MaskedElasticPointsUpdateJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "400e747c030c928de3a89c9299577e31",
+      "ModuleHash": "084e172d02f5e27d705a3b2463d62260",
       "LinkName": "618BFFEB9214578E",
       "AssemblyDependencyIndices": [
         3,
@@ -126,20 +126,20 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.NormalizeNormalsJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "897ae9ad4b8b24e66ffc228a70fdea0a",
+      "ModuleHash": "2d50097f6af6831ea66adc8e805897cd",
       "LinkName": "FB8DE4CF27C2C86E",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -147,13 +147,13 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.ResetNormalsJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "33ee3c73f99f149689f86193bc89e275",
+      "ModuleHash": "68d01ea98a36d5c0c303b1b243856e2e",
       "LinkName": "90EA1806B2F61905",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -161,13 +161,13 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TransformPointsFromJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "65fafcefef67f9b23187aae42757849f",
+      "ModuleHash": "88a99ce094060c53f75f1e56dcafb1a1",
       "LinkName": "5BF92EADD5F2E528",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -175,13 +175,13 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TransformPointsJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "294f5ac0077a132f65d325a5ee060ea6",
+      "ModuleHash": "2b999777463e12ea51197627ec63b919",
       "LinkName": "7F7CB0C454FC3519",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -189,7 +189,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.BendDeformer/UnlimitedBendJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "718570d5f530aaf8f7c958900a3ffd28",
+      "ModuleHash": "3c69710c7c0f896db7553ccad812aec8",
       "LinkName": "F95F3DE7E18C7608",
       "AssemblyDependencyIndices": [
         3,
@@ -197,13 +197,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.BendDeformer/LimitedBendJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "e6a82e199709bb1df873abb758df49aa",
+      "ModuleHash": "581d2436a233fdb9d2d41756b75d8264",
       "LinkName": "C433226E85A3B005",
       "AssemblyDependencyIndices": [
         3,
@@ -211,13 +211,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.BlendDeformer/BlendJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "4ecf37ff48e668524ec9d217c3f37d34",
+      "ModuleHash": "61fa013f573bd109f320ed604510d0f6",
       "LinkName": "34071C9B855AF37D",
       "AssemblyDependencyIndices": [
         3,
@@ -225,13 +225,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.BoundedBendDeformer/UnlimitedBendJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "9c064325e90c2edf6273a3df12668826",
+      "ModuleHash": "b2a68145a5187da1386d24f96379bac1",
       "LinkName": "AB3A405B8B60FD79",
       "AssemblyDependencyIndices": [
         3,
@@ -239,14 +239,14 @@
         5,
         1,
         2,
-        6,
-        7
+        7,
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.BoundedBendDeformer/LimitedBendJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "67523d784e7a4e0e41db43dc009508b4",
+      "ModuleHash": "95a6dab144f251f3eb533ae0de96c43e",
       "LinkName": "29A20AA0BCBAB84A",
       "AssemblyDependencyIndices": [
         3,
@@ -254,14 +254,14 @@
         5,
         1,
         2,
-        6,
-        7
+        7,
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.BulgeDeformer/BulgeJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "b8b09609d19274c6d2d0d480fd32c9a0",
+      "ModuleHash": "932a30ad03e803187aae52a895c321d5",
       "LinkName": "D6804F44CBF4821B",
       "AssemblyDependencyIndices": [
         3,
@@ -269,13 +269,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CubifyDeformer/CubifyJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "34ff6515802378bdb6025dbc6309b6a3",
+      "ModuleHash": "5f5d5991701c976474b11067cdf2baca",
       "LinkName": "163992416BF6B841",
       "AssemblyDependencyIndices": [
         3,
@@ -283,13 +283,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CurveDisplaceDeformer/CurveDisplaceJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "992b8257db7a23f52a12dc73f1a8761b",
+      "ModuleHash": "a588d401ec6e1b21cb5be11f45d051a8",
       "LinkName": "3A4A40AE4C69AB0B",
       "AssemblyDependencyIndices": [
         3,
@@ -297,14 +297,14 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CurveScaleDeformer/CurveScaleJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "1b29e8dd8a31e654966d6bbfdf1f183a",
+      "ModuleHash": "dd4c6aff593b5c6c80472ce301a270f2",
       "LinkName": "56581AA8A757F8E8",
       "AssemblyDependencyIndices": [
         3,
@@ -312,14 +312,14 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CylindrifyDeformer/CylindrifyJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "f84ef89cfc442e5c255ee6f10f41c022",
+      "ModuleHash": "896cf9658f9842f55f09ac5cec7609c2",
       "LinkName": "C826A7436213D0B5",
       "AssemblyDependencyIndices": [
         3,
@@ -327,13 +327,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.InflateDeformer/InflateJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "3d7d3aceefd84042dab812a6897698c0",
+      "ModuleHash": "96ad9866c2c5d1f62d70063bf26a35f9",
       "LinkName": "C6F667D6852D36D1",
       "AssemblyDependencyIndices": [
         3,
@@ -341,13 +341,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.LatheDisplaceDeformer/LatheDisplaceJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "4079d8b760e295aea32c2e5e704a1898",
+      "ModuleHash": "76815d2a15e5141fcb6a92f5e409026c",
       "LinkName": "D71D3EAC5047C7E4",
       "AssemblyDependencyIndices": [
         3,
@@ -355,20 +355,20 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.LatticeDeformer/LatticeJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "9a0c4a8a059064ae264277516d724f86",
+      "ModuleHash": "2df0590908d92f768be6ff4489ac21f0",
       "LinkName": "95880B6117AADA6A",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -376,7 +376,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.MagnetDeformer/MagnetJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "124b1441907a4981bf1462b19bd53f97",
+      "ModuleHash": "a29500d049f16f8edc32962cc1b43c24",
       "LinkName": "38711B6CC31EC0FF",
       "AssemblyDependencyIndices": [
         3,
@@ -384,13 +384,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.MeltDeformer/MeltJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "0e15b5f8cfdc8f8f9ebc8e0eda18baaa",
+      "ModuleHash": "55756d43ecda3edd6dfbb724e407cfb8",
       "LinkName": "C5B27965D3A6F142",
       "AssemblyDependencyIndices": [
         3,
@@ -398,19 +398,19 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CellularNoiseDeformer/_3DNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "5a3c09451cdcd9d998c3a3afb0e77b85",
+      "ModuleHash": "13962a8f408b7c7cc3a5cabfeefce71f",
       "LinkName": "D57CFDD356D00FF6",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -418,7 +418,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CellularNoiseDeformer/DirectionalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "be7837ee112f893922f1a2e5a57edb94",
+      "ModuleHash": "c33b382e69439c1716f05d6c3a57d125",
       "LinkName": "DAEBD039D0C7AB67",
       "AssemblyDependencyIndices": [
         3,
@@ -426,13 +426,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CellularNoiseDeformer/NormalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "f877e49c6f3b95a4d3ace372ae92e149",
+      "ModuleHash": "8b9651ba43119f43c51ec9c8ac53546c",
       "LinkName": "5703B3C3F0DBF473",
       "AssemblyDependencyIndices": [
         3,
@@ -440,13 +440,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CellularNoiseDeformer/SphericalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "b04c83d095cebbfdf1b751c746c7a1f1",
+      "ModuleHash": "a61bc0e7c6657005c0f7d9b415f0d2dc",
       "LinkName": "F5FD50A15C4052BF",
       "AssemblyDependencyIndices": [
         3,
@@ -454,13 +454,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.CellularNoiseDeformer/ColorNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "9be291a5f6cebe2b76c8d2b0f5c8e071",
+      "ModuleHash": "2b5aafbc1ac01bd494c59a2a60d88733",
       "LinkName": "AB2639E66A0AC595",
       "AssemblyDependencyIndices": [
         3,
@@ -468,19 +468,19 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.PerlinNoiseDeformer/_3DNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "4999afba7ec49a485d3b12b31b7e7dbc",
+      "ModuleHash": "9c8a7bd0b014b1255ddcb472e1b4365b",
       "LinkName": "1364C890885EE4C8",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -488,7 +488,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.PerlinNoiseDeformer/DirectionalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "8517cbbbfb0e7254bb693e916bec2c52",
+      "ModuleHash": "abf96e4e6ebbab4317fdb578151b0502",
       "LinkName": "BAAEF2F3788AFAD7",
       "AssemblyDependencyIndices": [
         3,
@@ -496,13 +496,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.PerlinNoiseDeformer/NormalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "e341fdcff52713f52badf099cad85f9c",
+      "ModuleHash": "28b217123ae6fa5c87711dc7d957acba",
       "LinkName": "18A57EBBE5EFBC8A",
       "AssemblyDependencyIndices": [
         3,
@@ -510,13 +510,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.PerlinNoiseDeformer/SphericalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "4520d04589ea24fa1c4632a18db6d1a9",
+      "ModuleHash": "03a8ad1136b0f0c21bf9794532f2cc62",
       "LinkName": "C59E3B15ADF8A1B8",
       "AssemblyDependencyIndices": [
         3,
@@ -524,13 +524,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.PerlinNoiseDeformer/ColorNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "7ed6a35d73b1575986d19a104b761f87",
+      "ModuleHash": "104fe7912117f0401459bbf1d19f9c16",
       "LinkName": "8B306EBEDA1F81ED",
       "AssemblyDependencyIndices": [
         3,
@@ -538,19 +538,19 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SimplexNoiseDeformer/_3DNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "1b2c6d25bb15c13cd107622b22612f45",
+      "ModuleHash": "44a40f7728e6f649bd9ce57dff2cc185",
       "LinkName": "4A7F07D8BBEA9D34",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -558,7 +558,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SimplexNoiseDeformer/DirectionalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "1075b00e731d7c958232dd9881d653ac",
+      "ModuleHash": "ce509e1f3c0ce99abdce04feddd7086f",
       "LinkName": "739CC7593FB0E19B",
       "AssemblyDependencyIndices": [
         3,
@@ -566,13 +566,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SimplexNoiseDeformer/NormalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "e0ee312152665a07a63ce788e97bfba9",
+      "ModuleHash": "db3092f3203f99d9961c703183a0d8c3",
       "LinkName": "79D8A8FE802890F0",
       "AssemblyDependencyIndices": [
         3,
@@ -580,13 +580,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SimplexNoiseDeformer/SphericalNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "076f93a17a8aa57ba39313ee4f22ea08",
+      "ModuleHash": "df5f559ea87c3b31f29e74b0ebb54bcd",
       "LinkName": "B19D43A6AC65BC0C",
       "AssemblyDependencyIndices": [
         3,
@@ -594,13 +594,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SimplexNoiseDeformer/ColorNoiseJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "a9e2fbbe49a3b8f4eaf77100dab0f389",
+      "ModuleHash": "01c0934b2d1679964eb5d1025f792fc9",
       "LinkName": "C0A25EA8ECFE60DE",
       "AssemblyDependencyIndices": [
         3,
@@ -608,13 +608,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.RadialCurveDeformer/RadialCurveJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "a69410f83cc43297aeef0013eee9de56",
+      "ModuleHash": "8f755e155cb2e50e9c6e95e5c20411ca",
       "LinkName": "247D54A90CDAAB4F",
       "AssemblyDependencyIndices": [
         3,
@@ -622,14 +622,14 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.RadialSkewDeformer/UnlimitedRadialSkewJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "9bbbfc95cbed7491beed876bd60c76cd",
+      "ModuleHash": "d5ac2fcc67355d6b7c87371987183dc0",
       "LinkName": "79C5EC7A940754F3",
       "AssemblyDependencyIndices": [
         3,
@@ -637,13 +637,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.RadialSkewDeformer/LimitedRadialSkewJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "3ab95043ba084349e30d74a0be9beb6e",
+      "ModuleHash": "ebe16ca0a2431cb39ef348d386c9f458",
       "LinkName": "D9B2EF018E9C9580",
       "AssemblyDependencyIndices": [
         3,
@@ -651,13 +651,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.RippleDeformer/UnlimitedRippleJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "c595231c36fa965b8700a7562759a19c",
+      "ModuleHash": "db8e95219062772d18a1706c6f406dae",
       "LinkName": "6642C2E9DCFA2008",
       "AssemblyDependencyIndices": [
         3,
@@ -665,13 +665,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.RippleDeformer/LimitedRippleJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "036db8c3322fba98ec50f4c2bdb54e5c",
+      "ModuleHash": "59729efe2845e0ea0506963b16e729ec",
       "LinkName": "148890610BC8EDEF",
       "AssemblyDependencyIndices": [
         3,
@@ -679,19 +679,19 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.ScaleDeformer/ScaleJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "6218317f34a23f4ced38a789bff4ee27",
+      "ModuleHash": "f49323b1559536009d65cbe4e9f050c9",
       "LinkName": "28C70D0F05094834",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -699,7 +699,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SineDeformer/SineJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "6f76a174b7485d4aade88c65982e0a9f",
+      "ModuleHash": "de68889a5a8f4c63eaee55f500e1af54",
       "LinkName": "1E0FA0E88F31C71A",
       "AssemblyDependencyIndices": [
         3,
@@ -707,13 +707,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SkewDeformer/UnlimitedSkewJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "bf034cfee6bcd5cd0d686a49cf902988",
+      "ModuleHash": "38070a1807180a86291395436dd35cc8",
       "LinkName": "623BAD227B57C6BE",
       "AssemblyDependencyIndices": [
         3,
@@ -721,13 +721,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SkewDeformer/LimitedSkewJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "02693b7ab096fed50bac7d0ea5ff4ede",
+      "ModuleHash": "42dd98aa8971761f7ca51d34e8b79c5a",
       "LinkName": "94BBD93EFAF17211",
       "AssemblyDependencyIndices": [
         3,
@@ -735,13 +735,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SpherifyDeformer/UnlimitedSpherifyJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "7e0d9d4748086dc7ca7554f529abbb27",
+      "ModuleHash": "9e8f50ee5c13b7c1158aebf7f1a16092",
       "LinkName": "066B653E48EDD49C",
       "AssemblyDependencyIndices": [
         3,
@@ -749,13 +749,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SpherifyDeformer/LimitedSpherifyJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "e5642abdec384fecde1a4f2023e4df24",
+      "ModuleHash": "25259cd4f44a802b9fbce090da5153f9",
       "LinkName": "8366C11526D1A81A",
       "AssemblyDependencyIndices": [
         3,
@@ -763,13 +763,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.SquashAndStretchDeformer/SquashAndStretchJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "4d089c6a4fcb1cf4a509712e0c8fc238",
+      "ModuleHash": "c1e14c0ef7c3367871c2c3b1302cf9e6",
       "LinkName": "F8D77C5CD6E20CEF",
       "AssemblyDependencyIndices": [
         3,
@@ -777,13 +777,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.StarDeformer/StarJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "2d180fd118a29a6a895df12a14663f44",
+      "ModuleHash": "bb1068d63dd47aff1ba31299b7907a10",
       "LinkName": "70007A2D97F93CCD",
       "AssemblyDependencyIndices": [
         3,
@@ -791,13 +791,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TaperDeformer/TaperJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "caa689ed9dbac98f2118f42ca7925050",
+      "ModuleHash": "2cebc192c30b9bb097b2cddc16c796fd",
       "LinkName": "2C5BB2E9A799A64B",
       "AssemblyDependencyIndices": [
         3,
@@ -805,13 +805,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TextureDisplaceDeformer/WorldTextureDisplaceJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "86f30410557405097f2e06f02f1360bf",
+      "ModuleHash": "11a7d5286e1f0e889a8ab09320200ef5",
       "LinkName": "1C9541D6EE3968AD",
       "AssemblyDependencyIndices": [
         3,
@@ -819,14 +819,14 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TextureDisplaceDeformer/WorldTextureDisplaceBilinearJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "705e7691874df4cd69c6b4c2d8749223",
+      "ModuleHash": "3f9699033ef090930facaf0e72afe2d7",
       "LinkName": "05E539083A37F3BB",
       "AssemblyDependencyIndices": [
         3,
@@ -834,14 +834,14 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TextureDisplaceDeformer/UVTextureDisplaceJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "3df958a439771159533d4e16be870356",
+      "ModuleHash": "20a1ec0c2e8dca840f0da1c16b254fbf",
       "LinkName": "F9D6109E17882564",
       "AssemblyDependencyIndices": [
         3,
@@ -849,14 +849,14 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TextureDisplaceDeformer/UVTextureDisplaceBilinearJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "9985bc921aab9e42e31724ee7af96f26",
+      "ModuleHash": "64ce5f544120d7933da46f950dfe4835",
       "LinkName": "F481F3D872F274DB",
       "AssemblyDependencyIndices": [
         3,
@@ -864,20 +864,20 @@
         5,
         1,
         2,
-        7,
-        6
+        6,
+        7
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TransformDeformer/TransformJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "2814b69ec6a531d9efe3ac092ece8447",
+      "ModuleHash": "cfa4a3fc33734b61c1c9d7acde5854dd",
       "LinkName": "64B80739CDCB6CD6",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -885,13 +885,13 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TransformOffsetDeformer/TransformOffsetJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "db986aca2e5793e031cc14a559a6b9a8",
+      "ModuleHash": "45651628ea0b5677461d208428c98121",
       "LinkName": "7CACDA10D851C778",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -899,7 +899,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TwirlDeformer/UnlimitedTwistJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "f0d844442a98341f8cf82ce431cb179a",
+      "ModuleHash": "fdf045a7084215be31c160de816aef0c",
       "LinkName": "AE6399C2AF7DEB88",
       "AssemblyDependencyIndices": [
         3,
@@ -907,13 +907,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TwirlDeformer/LimitedTwistJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "abbc2f3bd83cc0eb519f39ba07554a2f",
+      "ModuleHash": "d19985dc70e66c29d9e77658af798950",
       "LinkName": "C5330D85C069C524",
       "AssemblyDependencyIndices": [
         3,
@@ -921,13 +921,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TwistDeformer/UnlimitedTwistJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "8a79dfe519efcba4c0b9b2889d1accb1",
+      "ModuleHash": "167acfe37f3060662c55d90025007ca3",
       "LinkName": "DF860BC379E0C205",
       "AssemblyDependencyIndices": [
         3,
@@ -935,13 +935,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.TwistDeformer/LimitedTwistJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "31b0fe1e7fcef45dddfafdb5654976c9",
+      "ModuleHash": "0bb8f2f15cf74cfc500c7811069b1a6d",
       "LinkName": "2B1B1C59F744A438",
       "AssemblyDependencyIndices": [
         3,
@@ -949,19 +949,19 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.UVOffsetDeformer/UVOffsetJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "04db9b6c83f9cf409f68a27f0d1837d6",
+      "ModuleHash": "3bfc1bacb38a288887486c8ac9840f7b",
       "LinkName": "88A429F9D79D99AE",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -969,13 +969,13 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.UVScaleDeformer/UVScaleJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "3001c5148af80bcd062bedf23182685f",
+      "ModuleHash": "5a9605d58998e6adf9761d1c5cd21298",
       "LinkName": "56264F793575E0B9",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -983,7 +983,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.WaveDeformer/WaveJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "bea219bf710068f4e063f637bc61e6a9",
+      "ModuleHash": "803936c06709032f35d4d505a73155ce",
       "LinkName": "00989C56B405A4CD",
       "AssemblyDependencyIndices": [
         3,
@@ -991,19 +991,19 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.MaskState/MaskStateJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "f07f0bfc4e4f92970307097f8d8d617b",
+      "ModuleHash": "7b8cf63e8eb9b040c709d8be40334efc",
       "LinkName": "696B6108C2EDD094",
       "AssemblyDependencyIndices": [
         3,
         4,
         5,
-        7,
+        6,
         1,
         2
       ]
@@ -1011,7 +1011,7 @@
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.BoxMask/CubeMaskJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "f8374f16916e9caa7df5ff595f14e5d3",
+      "ModuleHash": "e6ac9b4e2b5a2462c3892f10cca975a6",
       "LinkName": "82F21DCF68E8D4FB",
       "AssemblyDependencyIndices": [
         3,
@@ -1019,14 +1019,14 @@
         5,
         1,
         2,
-        6,
-        7
+        7,
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.BoxMask/InvertedCubeMaskJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "2d82663dedda5a1344f739aa96c8ea59",
+      "ModuleHash": "3c183107388e1dd23b3af91c90a226fb",
       "LinkName": "8599A1B89C3DECD9",
       "AssemblyDependencyIndices": [
         3,
@@ -1034,14 +1034,14 @@
         5,
         1,
         2,
-        6,
-        7
+        7,
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.SphereMask/SphereMaskJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "eda9de65e2dbd5f6f09d5d3ff933f3a9",
+      "ModuleHash": "ee7ec35c4a5eb46584e2d15c63189ec0",
       "LinkName": "B0E0D73069BBCA3F",
       "AssemblyDependencyIndices": [
         3,
@@ -1049,13 +1049,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.SphereMask/InvertedSphereMaskJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "a313e5bc81b50f0211a9f5c6f9be1105",
+      "ModuleHash": "d08e68249f3a77152281a675d813ffbc",
       "LinkName": "562FDB910A12A905",
       "AssemblyDependencyIndices": [
         3,
@@ -1063,13 +1063,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.VertexColorMask/VertexColorJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "8e4ea89a895787cfeebeedb3f23274e1",
+      "ModuleHash": "b53a33170494e6b4d1a03f8d3214a48f",
       "LinkName": "945FBC9EE2DEC630",
       "AssemblyDependencyIndices": [
         3,
@@ -1077,13 +1077,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.VertexColorMask/InvertedVertexColorJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "1051bb9e7cec289a252274ea1de1a6bd",
+      "ModuleHash": "2522c5d31adfe093ddd5ea90fd3b2618",
       "LinkName": "29F75C9A34D876FF",
       "AssemblyDependencyIndices": [
         3,
@@ -1091,13 +1091,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.VerticalGradientMask/VerticalGradientJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "4509971af5daa3f1538a7b685f592db0",
+      "ModuleHash": "0ca04bb76634672f02b2939a8959e68d",
       "LinkName": "D836068D6BB6ED91",
       "AssemblyDependencyIndices": [
         3,
@@ -1105,13 +1105,13 @@
         5,
         1,
         2,
-        7
+        6
       ]
     },
     {
       "FullName": "System.Void Unity.Jobs.IJobParallelForExtensions/ParallelForJobStruct`1<Deform.Masking.VerticalGradientMask/InvertedVerticalGradientJob>::Execute(T&,System.IntPtr,System.IntPtr,Unity.Jobs.LowLevel.Unsafe.JobRanges&,System.Int32)",
       "ModuleOptionsHash": 11834165633931345063,
-      "ModuleHash": "dc54f09e65502a64005d795433bad1e4",
+      "ModuleHash": "facb9d52264dae40f71e8e81ac73495f",
       "LinkName": "6B8FCAD56D5CBC44",
       "AssemblyDependencyIndices": [
         3,
@@ -1119,7 +1119,7 @@
         5,
         1,
         2,
-        7
+        6
       ]
     }
   ]

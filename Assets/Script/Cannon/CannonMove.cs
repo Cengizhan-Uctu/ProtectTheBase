@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CannonMove : MonoBehaviour
+public class CannonMove : SingeltonGeneric<CannonMove>
 {
     private Touch isTouch;
     [SerializeField] float speed = 1;
-
+    #region singelton
+    private void Awake()
+    {
+        MakeSingelton(this);
+    }
+    #endregion
     private void Update()
     {
 

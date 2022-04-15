@@ -2,22 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-public class CannonShot : MonoBehaviour
+public class CannonShot : SingeltonGeneric<CannonShot>
 {
-    [SerializeField] float cannonShotTime;
+    private GameObject[] objectPoolCannonBullet;
     [SerializeField] GameObject Bullet;
+    [SerializeField] GameObject player;
+    [SerializeField] GameObject Spherify;
     [SerializeField] Transform cannonBarrel;
     [SerializeField] float power;
-    [SerializeField] GameObject player;
+    [SerializeField] float cannonShotTime;
     [SerializeField] float fireDelay;
-    [SerializeField] GameObject parentCannon;
     private float fireRare;
-    private GameObject[] objectPoolCannonBullet;
     private int bulletCounter;
 
-
+   
     private void Awake()
     {
+        MakeSingelton(this);
         objectPoolCannonBullet = new GameObject[10];
         for (int i = 0; i < objectPoolCannonBullet.Length; i++)
         {
@@ -38,16 +39,19 @@ public class CannonShot : MonoBehaviour
     {
         if (Time.time > fireRare)
         {
+            
             objectPoolCannonBullet[bulletCounter].SetActive(true);
             objectPoolCannonBullet[bulletCounter].GetComponent<Rigidbody>().velocity = Vector3.zero;
             objectPoolCannonBullet[bulletCounter].transform.position = cannonBarrel.position;
             objectPoolCannonBullet[bulletCounter].GetComponent<Rigidbody>().AddForce(transform.right * power, ForceMode.Impulse);
-            transform.DOLocalMoveX(0.05f, 0.5f).OnComplete(() => transform.localPosition = new Vector3(0, transform.localPosition.y, transform.localPosition.z));
-            transform.DOScale(new Vector3(0.01f, 0.01f, 0.01f), 0.4f)
-                .OnComplete(() => transform.DOScale(new Vector3(0.001f, 0.001f, 0.001f), 0.1f));
+            Spherify.transform.DOLocalMoveX(0.05f, 0.5f).
+                OnComplete(() => Spherify.transform.localPosition = new Vector3(0, Spherify.transform.localPosition.y, Spherify.transform.localPosition.z));
+            Spherify.transform.DOScale(new Vector3(0.01f, 0.01f, 0.01f), 0.4f)
+                .OnComplete(() => Spherify.transform.DOScale(new Vector3(0.001f, 0.001f, 0.001f), 0.1f));
+           
             fireRare = Time.time + fireDelay;
             bulletCounter++;
-            if (bulletCounter==objectPoolCannonBullet.Length)
+            if (bulletCounter == objectPoolCannonBullet.Length)
             {
                 bulletCounter = 0;
             }
@@ -55,10 +59,10 @@ public class CannonShot : MonoBehaviour
     }
     IEnumerator Shooting()
     {
-       
+
         yield return new WaitForSeconds(cannonShotTime);
         player.SetActive(true);
-        parentCannon.SetActive(false);
+        gameObject.SetActive(false);
     }
 
 }

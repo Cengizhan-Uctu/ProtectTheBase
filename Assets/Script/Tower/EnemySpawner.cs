@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : SingeltonGeneric<EnemySpawner>
 {
     [SerializeField] GameObject tower;
     [SerializeField] GameObject ammo;
@@ -12,6 +12,13 @@ public class EnemySpawner : MonoBehaviour
     private GameObject[] objectPoolAmmo;
     private int enemyCounter;
     private int ammoCounter;
+
+    #region singelton
+    private void Awake()
+    {
+        MakeSingelton(this);
+    }
+    #endregion
     void Start()
     {
         objectPoolEnemy = new GameObject[10];

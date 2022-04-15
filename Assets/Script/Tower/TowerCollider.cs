@@ -13,6 +13,7 @@ public class TowerCollider : MonoBehaviour
     private int currentHealt;
     private void OnEnable()
     {
+     
         maxHealt = Random.Range(2, 6);
         currentHealt = maxHealt;
         healtText.text = currentHealt.ToString();
@@ -20,61 +21,48 @@ public class TowerCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+
         if (other.CompareTag("Bullet"))
         {
             currentHealt--;
-            transform.DOPunchScale(new Vector3(.18f, 0, .18f), 0.2f);
-            healtText.text = currentHealt.ToString();
-
-            if (currentHealt == maxHealt - 1)
-            {
-                transform.GetChild(0).gameObject.SetActive(false);
-                GameObject newBrokenTower = Instantiate(brokenTower, transform.position, Quaternion.identity);
-                newBrokenTower.transform.SetParent(gameObject.transform);
-
-            }
-           
-            if (currentHealt <= 0)
-            {
-                GameObject newDestructionObject = Instantiate(destructionObject, transform.position, Quaternion.identity);
-                Rigidbody[] Crigdbody = newDestructionObject.GetComponentsInChildren<Rigidbody>();
-                foreach (Rigidbody rb in Crigdbody)
-                {
-                    rb.AddForce(transform.position * power);
-                }
-                Destroy(newDestructionObject, 1);
-                gameObject.SetActive(false);
-            }
+            CreateBrokenTower();
             other.gameObject.SetActive(false);
         }
         if (other.CompareTag("CannonBullet"))
         {
-            currentHealt-=2;
-            transform.DOPunchScale(new Vector3(.18f, 0, .18f), 0.2f);
-            healtText.text = currentHealt.ToString();
-
-            if (currentHealt == maxHealt - 1)
-            {
-                transform.GetChild(0).gameObject.SetActive(false);
-                GameObject newBrokenTower = Instantiate(brokenTower, transform.position, Quaternion.identity);
-                newBrokenTower.transform.SetParent(gameObject.transform);
-
-            }
-
-            if (currentHealt <= 0)
-            {
-                GameObject newDestructionObject = Instantiate(destructionObject, transform.position, Quaternion.identity);
-                Rigidbody[] Crigdbody = newDestructionObject.GetComponentsInChildren<Rigidbody>();
-                foreach (Rigidbody rb in Crigdbody)
-                {
-                    rb.AddForce(transform.position * power);
-                }
-                Destroy(newDestructionObject, 1);
-                gameObject.SetActive(false);
-            }
+            currentHealt -= 2;
+            CreateBrokenTower();
             other.gameObject.SetActive(false);
         }
     }
     
+    void CreateBrokenTower()
+    {
+        transform.DOPunchScale(new Vector3(.18f, 0, .18f), 0.2f);
+        healtText.text = currentHealt.ToString();
+
+        if (currentHealt == maxHealt - 1)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            GameObject newBrokenTower = Instantiate(brokenTower, transform.position, Quaternion.identity);
+            newBrokenTower.transform.SetParent(gameObject.transform);
+
+        }
+
+        if (currentHealt <= 0)
+        {
+
+            GameObject newDestructionObject = Instantiate(destructionObject, transform.position, Quaternion.identity);
+            Rigidbody[] Crigdbody = newDestructionObject.GetComponentsInChildren<Rigidbody>();
+            Collider[] Ccollider = newDestructionObject.GetComponentsInChildren<Collider>();
+            foreach (Rigidbody rb in Crigdbody)
+            {
+                rb.AddForce(transform.position * power);
+            }
+            currentHealt = 0;
+            maxHealt = 0;
+            gameObject.SetActive(false);
+        }
+
+    }
 }

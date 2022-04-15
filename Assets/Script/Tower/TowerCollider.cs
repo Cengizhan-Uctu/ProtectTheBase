@@ -7,6 +7,7 @@ public class TowerCollider : MonoBehaviour
 {
     [SerializeField] GameObject brokenTower;
     [SerializeField] GameObject destructionObject;
+    [SerializeField] GameObject effect;
     [SerializeField] float power;
     [SerializeField] Text healtText;
     private int maxHealt;
@@ -38,7 +39,8 @@ public class TowerCollider : MonoBehaviour
     
     void CreateBrokenTower()
     {
-        transform.DOPunchScale(new Vector3(.18f, 0, .18f), 0.2f);
+        Instantiate(effect, new Vector3(transform.position.x,transform.position.y+1.5f,transform.position.z), Quaternion.identity);
+        transform.DOPunchScale(new Vector3(.2f, 0, .2f), 0.2f);
         healtText.text = currentHealt.ToString();
 
         if (currentHealt == maxHealt - 1)

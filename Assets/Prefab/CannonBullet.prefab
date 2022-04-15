@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 972754305346711180}
   - component: {fileID: 972754305346711183}
   - component: {fileID: 972754305346711182}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 972754306644365729}
   - component: {fileID: -8235861118156009723}
   - component: {fileID: -962169028674761891}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CannonBullet
   m_TagString: CannonBullet
   m_Icon: {fileID: 0}
@@ -151,9 +151,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 972754306644365729}
     m_Modifications:
+    - target: {fileID: 1477143843120986, guid: c80a2fafe7a7e404fa41ed10b8a5d222, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1688954165942588, guid: c80a2fafe7a7e404fa41ed10b8a5d222, type: 3}
       propertyPath: m_Name
       value: AuraChargeRed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1688954165942588, guid: c80a2fafe7a7e404fa41ed10b8a5d222, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812880615911206, guid: c80a2fafe7a7e404fa41ed10b8a5d222, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1881899787321046, guid: c80a2fafe7a7e404fa41ed10b8a5d222, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4329936086623020, guid: c80a2fafe7a7e404fa41ed10b8a5d222, type: 3}
       propertyPath: m_RootOrder

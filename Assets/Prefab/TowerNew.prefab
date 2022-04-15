@@ -79,6 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brokenTower: {fileID: 1770830601379488912, guid: eb92ec6fb3e753944a9f00cdb38009cc, type: 3}
   destructionObject: {fileID: 3628803618184831541, guid: 9f5c6437b360af4459d98b537a428ad5, type: 3}
+  effect: {fileID: 5219371382733291420, guid: 1beee91d503f7ca4f94e2bf1e78dab80, type: 3}
   power: 30
   healtText: {fileID: 3244025612745134344}
 --- !u!114 &-6319636399934843879
@@ -93,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1544696a534575849839e3ddf4dbd0b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1.5
 --- !u!1 &3244025612306037215
 GameObject:
   m_ObjectHideFlags: 0

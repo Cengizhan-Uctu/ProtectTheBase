@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TowerPices : MonoBehaviour
 {
-    private void OnEnable()
+    private void Awake()
     {
         StartCoroutine(Fadeout());
     }

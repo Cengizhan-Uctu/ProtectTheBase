@@ -59,8 +59,8 @@
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonEffectCycler.cs" />
     <Compile Include="Assets\Script\Managers\SingeltonGeneric.cs" />
     <Compile Include="Assets\Script\Player\PlayerCollision.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\AssetsStore\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\AssetsStore\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Scripts\PolygonLightFade.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonFireProjectile.cs" />
     <Compile Include="Assets\Script\Tower\TowerPices.cs" />
@@ -69,24 +69,27 @@
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Scripts\PolygonLightFlicker.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonProjectileScript.cs" />
     <Compile Include="Assets\Script\Player\PlayerShoting.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\AssetsStore\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+    <Compile Include="Assets\Script\Managers\GameManager.cs" />
+    <Compile Include="Assets\Script\Tower\AmmoFade.cs" />
+    <Compile Include="Assets\AssetsStore\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+    <Compile Include="Assets\AssetsStore\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Script\Player\PlayerAnimation.cs" />
     <Compile Include="Assets\Script\Tower\EnemySpawner.cs" />
+    <Compile Include="Assets\Script\Managers\UIProsseing.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonLoopScript.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonSceneSelect.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\AssetsStore\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Scripts\PolygonBeamStatic.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\Cannon\CannonShot.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\AssetsStore\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Script\Tower\TowerCollider.cs" />
-    <Compile Include="Assets\Script\Tower\TowerMove.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonButtonScript.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonOrbit.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Scripts\PolygonRotation.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonBeamScript.cs" />
+    <Compile Include="Assets\Script\Player\BulletSetActive.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Material\Simple Toon\Shaders\STOutline.shader" />

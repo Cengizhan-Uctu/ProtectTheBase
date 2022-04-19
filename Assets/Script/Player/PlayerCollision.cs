@@ -14,24 +14,26 @@ public class PlayerCollision : SingeltonGeneric<PlayerCollision>
     #endregion
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer==10)
+        if (collision.gameObject.layer == 10)
         {
             PlayerShoting.Instance.incraseAmnmo();
             collision.gameObject.SetActive(false);
         }
     }
+
     public void GlassCapsulBullet(int bulletcount)
     {
+        bulletcount /= 10;
         for (int i = 0; i < CapsuleBullet.Length; i++)
         {
-            if (i<bulletcount)
+            if (i < bulletcount)
             {
-               
+
                 CapsuleBullet[i].SetActive(true);
             }
             else
             {
-              
+
                 CapsuleBullet[i].SetActive(false);
             }
         }

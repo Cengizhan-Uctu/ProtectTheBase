@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CannonMove : SingeltonGeneric<CannonMove>
 {
-    private Touch isTouch;
-    [SerializeField] float speed = 1;
+    [SerializeField] FixedJoystick JoyStick;
+    [SerializeField] Rigidbody rigidBody;
+    [SerializeField] float speed;
     #region singelton
     private void Awake()
     {
@@ -14,24 +15,7 @@ public class CannonMove : SingeltonGeneric<CannonMove>
     #endregion
     private void Update()
     {
-
-        if (Input.touchCount > 0)
-        {
-            isTouch = Input.GetTouch(0);
-            LineMoveCannon();
-        }
-    }
-  
-    void LineMoveCannon()
-    {
-        if (isTouch.phase == TouchPhase.Moved)
-        {
-
-            float xAxsis = Mathf.Clamp((transform.localPosition.x + isTouch.deltaPosition.x * Time.deltaTime * speed), -2.5f, 2.5f);
-            transform.localPosition = new Vector3(xAxsis,
-                transform.localPosition.y,
-                transform.localPosition.z);
-        }
-       
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -3.5f, 3.5f), transform.position.y, transform.position.z);
+        rigidBody.velocity = new Vector3(JoyStick.Horizontal * speed, 0, 0);
     }
 }

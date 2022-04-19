@@ -11,8 +11,9 @@ public class TowerPices : MonoBehaviour
     IEnumerator Fadeout()
     {
         yield return new WaitForSeconds(1f);
-        gameObject.GetComponent<Rigidbody>().mass = 0.3f;
+        transform.parent = null;
         gameObject.GetComponent<Collider>().isTrigger = true;
+        gameObject.GetComponent<Rigidbody>().mass = 0.3f;
     }
     private void OnTriggerEnter(Collider other)
     {

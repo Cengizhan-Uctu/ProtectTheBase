@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3244025612132622988}
   - component: {fileID: 3244025612132622989}
   - component: {fileID: 5867120727396793246}
-  - component: {fileID: -6319636399934843879}
   m_Layer: 8
   m_Name: TowerNew
   m_TagString: Enemy
@@ -82,19 +81,7 @@ MonoBehaviour:
   effect: {fileID: 5219371382733291420, guid: 1beee91d503f7ca4f94e2bf1e78dab80, type: 3}
   power: 30
   healtText: {fileID: 3244025612745134344}
---- !u!114 &-6319636399934843879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3244025612132622990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1544696a534575849839e3ddf4dbd0b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 50
 --- !u!1 &3244025612306037215
 GameObject:
   m_ObjectHideFlags: 0

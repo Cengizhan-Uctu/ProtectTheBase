@@ -20,7 +20,7 @@ public class PlayerShoting : SingeltonGeneric<PlayerShoting>
     private float fireRare;
     private int poolCounter;
     private int bulletConut;
-    private float vibaxis = 4;
+    private float vibaxis = 1.5f;
 
     #region singelton
     private void Awake()
@@ -31,7 +31,7 @@ public class PlayerShoting : SingeltonGeneric<PlayerShoting>
     private void Start()
     {
         isFire = false;
-        bulletConut = 6;
+        bulletConut = 60;
         PlayerCollision.Instance.GlassCapsulBullet(bulletConut);
         objectPoolBullet = new GameObject[objeckPoolCount];
         for (int i = 0; i < objectPoolBullet.Length; i++)
@@ -60,11 +60,11 @@ public class PlayerShoting : SingeltonGeneric<PlayerShoting>
     }
     public void Shoting(bool isTrunEnemy, GameObject enemy)
     {
-       
+
         if (isTrunEnemy && bulletConut > 0)
         {
-           
-           
+
+
             if (Time.time > fireRare)
             {
                 PlayerAnimation.Instance.FiringAnimationTrue();
@@ -72,8 +72,9 @@ public class PlayerShoting : SingeltonGeneric<PlayerShoting>
                 PlayerCollision.Instance.GlassCapsulBullet(bulletConut);
                 objectPoolBullet[poolCounter].SetActive(true);
                 objectPoolBullet[poolCounter].transform.position = gunBarrel.position;
-                objectPoolBullet[poolCounter].transform.DOMove(new Vector3(enemy.transform.position.x, enemy.transform.position.y+1, enemy.transform.position.z) , bulletSpeed);
-                objectPoolBullet[poolCounter].transform.GetChild(0).transform.DOPunchPosition(new Vector3(vibaxis, 0, 0), 2, 2);
+                objectPoolBullet[poolCounter].transform.DOMove(new Vector3(enemy.transform.position.x, enemy.transform.position.y + 1, enemy.transform.position.z), bulletSpeed);
+              
+                objectPoolBullet[poolCounter].transform.GetChild(0).transform.DOPunchPosition(new Vector3(vibaxis, 0, 0), 0.5f, 2);
                 vibaxis *= -1;
                 poolCounter++;
                 if (poolCounter == objectPoolBullet.Length)
@@ -86,6 +87,7 @@ public class PlayerShoting : SingeltonGeneric<PlayerShoting>
         }
 
     }
+
     void oncollision()
     {
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, shotRange);
@@ -99,18 +101,18 @@ public class PlayerShoting : SingeltonGeneric<PlayerShoting>
             }
 
         }
-       
+
     }
-    public void incraseAmnmo() 
+    public void incraseAmnmo()
     {
-        bulletConut++;
+        bulletConut+=10;
         PlayerCollision.Instance.GlassCapsulBullet(bulletConut);
-        if (bulletConut>maxBullet)
+        if (bulletConut > maxBullet)
         {
             bulletConut -= 5;
             cannon.SetActive(true);
             gameObject.SetActive(false);
         }
     }
-   
+
 }

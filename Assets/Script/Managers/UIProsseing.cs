@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIProsseing : SingeltonGeneric<UIProsseing>
 {
@@ -20,7 +21,7 @@ public class UIProsseing : SingeltonGeneric<UIProsseing>
     }
     private void Start()
     {
-        //StartUI();
+        StartUI();
     }
     void GameOverUI()
     {
@@ -45,5 +46,28 @@ public class UIProsseing : SingeltonGeneric<UIProsseing>
         StartBtn.SetActive(true);
         ReplayBtn.SetActive(false);
         NextLevelBtn.SetActive(false);
+    }
+    public void RePBtnlay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameObject.SetActive(false);
+    }
+
+    public void NexLevelBtnAction()
+    {
+        if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            RePBtnlay();
+        }
+    }
+    public void StartBtnAction()
+    {
+        Time.timeScale = 1;
+        gameObject.SetActive(false);
     }
 }

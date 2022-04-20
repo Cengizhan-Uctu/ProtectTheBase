@@ -9,6 +9,7 @@ TagManager:
   - CannonBullet
   - Dump
   - RedLine
+  - Piece
   layers:
   - Default
   - TransparentFX

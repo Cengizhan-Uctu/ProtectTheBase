@@ -20,7 +20,7 @@ public class PlayerShoting : SingeltonGeneric<PlayerShoting>
     private float fireRare;
     private int poolCounter;
     private int bulletConut;
-    private float vibaxis = 1.5f;
+    private float vibaxis = 2f;
 
     #region singelton
     private void Awake()
@@ -72,9 +72,9 @@ public class PlayerShoting : SingeltonGeneric<PlayerShoting>
                 PlayerCollision.Instance.GlassCapsulBullet(bulletConut);
                 objectPoolBullet[poolCounter].SetActive(true);
                 objectPoolBullet[poolCounter].transform.position = gunBarrel.position;
+                objectPoolBullet[poolCounter].GetComponent<Rigidbody>().velocity = Vector3.zero;
                 objectPoolBullet[poolCounter].transform.DOMove(new Vector3(enemy.transform.position.x, enemy.transform.position.y + 1, enemy.transform.position.z), bulletSpeed);
-              
-                objectPoolBullet[poolCounter].transform.GetChild(0).transform.DOPunchPosition(new Vector3(vibaxis, 0, 0), 0.5f, 2);
+                objectPoolBullet[poolCounter].transform.GetChild(0).transform.DOPunchPosition(new Vector3(vibaxis, 0, 0), 0.3f, 2);
                 vibaxis *= -1;
                 poolCounter++;
                 if (poolCounter == objectPoolBullet.Length)

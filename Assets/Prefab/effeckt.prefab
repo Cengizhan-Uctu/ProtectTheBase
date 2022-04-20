@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5219371382733291410}
   - component: {fileID: 5219371382733291411}
   m_Layer: 0
-  m_Name: effeckt
+  m_Name: Effeckt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

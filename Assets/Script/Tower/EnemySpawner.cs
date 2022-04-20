@@ -8,7 +8,6 @@ public class EnemySpawner : SingeltonGeneric<EnemySpawner>
     [SerializeField] GameObject ammo;
     [SerializeField] float enemyPeriod;
     [SerializeField] float bulletPeriod;
-    private GameObject[] objectPoolEnemy;
     private GameObject[] objectPoolAmmo;
     private int enemyCounter;
     private int ammoCounter;
@@ -21,7 +20,7 @@ public class EnemySpawner : SingeltonGeneric<EnemySpawner>
     #endregion
     void Start()
     {
-        objectPoolEnemy = new GameObject[10];
+       
         objectPoolAmmo = new GameObject[10];
         for (int i = 0; i < objectPoolAmmo.Length; i++)
         {
@@ -29,12 +28,7 @@ public class EnemySpawner : SingeltonGeneric<EnemySpawner>
             newAmmo.SetActive(false);
             objectPoolAmmo[i] = newAmmo;
         }
-        for (int i = 0; i < objectPoolEnemy.Length; i++)
-        {
-            GameObject newEnemy = Instantiate(tower);
-            tower.SetActive(false);
-            objectPoolEnemy[i] = newEnemy;
-        }
+      
         StartCoroutine(SpawnEnemy());
         StartCoroutine(SpawnBullet());
     }
@@ -44,14 +38,8 @@ public class EnemySpawner : SingeltonGeneric<EnemySpawner>
         while (true)
         {
             yield return new WaitForSeconds(enemyPeriod);
-            objectPoolEnemy[enemyCounter].SetActive(false);
-            objectPoolEnemy[enemyCounter].transform.position=transform.position;
-            objectPoolEnemy[enemyCounter].SetActive(true);
-            enemyCounter++;
-            if (enemyCounter == objectPoolEnemy.Length)
-            {
-                enemyCounter = 0;
-            }
+            Instantiate(tower,transform.position,Quaternion.identity);
+           
         }
        
     }

@@ -2870,7 +2870,7 @@ MonoBehaviour:
   effect: {fileID: 5219371382733291420, guid: 1beee91d503f7ca4f94e2bf1e78dab80, type: 3}
   power: 1
   healtText: {fileID: 3141147794270380595}
-  speed: 20
+  speed: 30
 --- !u!54 &5945298081468699176
 Rigidbody:
   m_ObjectHideFlags: 0

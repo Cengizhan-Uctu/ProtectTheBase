@@ -10,7 +10,7 @@ public class TowerExplosion : MonoBehaviour
     [SerializeField] Text healtText;
     [SerializeField] float speed;
     private GameObject[] picess;
-    private int maxHealt;
+    public int maxHealt;
     private int currentHealt;
     private void Start()
     {
@@ -44,14 +44,15 @@ public class TowerExplosion : MonoBehaviour
             currentHealt--;
             CreateBrokenTower();
             healtText.text = currentHealt.ToString();
+            collision.gameObject.SetActive(false);
         }
         if (collision.gameObject.CompareTag("CannonBullet"))
         {
             Instantiate(effect, new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z), Quaternion.identity);
-            collision.gameObject.SetActive(false);
             currentHealt-=5;
             CreateBrokenTower();
             healtText.text = currentHealt.ToString();
+            collision.gameObject.SetActive(false);
         }
         if (currentHealt <= 0)
         {
@@ -87,4 +88,5 @@ public class TowerExplosion : MonoBehaviour
         }
         transform.DOPunchScale(new Vector3(0.02f, 0.02f, 0.02f), 0.1f);
     }
+    
 }

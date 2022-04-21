@@ -79,6 +79,7 @@
     <Compile Include="Assets\Script\Tower\EnemySpawner.cs" />
     <Compile Include="Assets\Script\Managers\UIProsseing.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonLoopScript.cs" />
+    <Compile Include="Assets\Script\Tower\Dump.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonSceneSelect.cs" />
     <Compile Include="Assets\AssetsStore\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Scripts\PolygonBeamStatic.cs" />
@@ -89,7 +90,7 @@
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonOrbit.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Scripts\PolygonRotation.cs" />
     <Compile Include="Assets\AssetsStore\Polygon Arsenal\Demo\Scripts\PolygonBeamScript.cs" />
-    <Compile Include="Assets\Script\Tower\Dump.cs" />
+    <Compile Include="Assets\Scenes\BulletMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Material\Simple Toon\Shaders\STOutline.shader" />
